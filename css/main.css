@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #b4b4b4;
+}
+
+.hero-line {
+  width: 50%;
+  height: 3;
+}
+
+.about-title span {
+  color: #fd5e53;
+}
+
+.icon-white {
+  fill: white;
+}
+/*# sourceMappingURL=main.css.map */

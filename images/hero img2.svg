@@ -1,0 +1,16 @@
+<svg width="486" height="528" viewBox="0 0 486 528" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hero img">
+<circle id="Ellipse 1" cx="246" cy="187" r="187" fill="#FD5E53"/>
+<g id="Rectangle 3" filter="url(#filter0_b)">
+<rect y="238" width="486" height="290" fill="white" fill-opacity="0.25"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b" x="-70" y="168" width="626" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="35"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+</defs>
+</svg>
