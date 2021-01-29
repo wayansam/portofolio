@@ -3,11 +3,135 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: #b4b4b4;
 }
 
-.hero-line {
-  width: 50%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 10%;
+}
+
+.nav-container {
+  background: #f2f2f2;
+  position: relative;
+}
+
+.nav-container a {
+  color: #08183a;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 2em 2em 1em;
+  background: white;
+  margin-left: 1em;
+}
+
+header .logo {
+  font-weight: 600;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.hero {
+  background: #f2f2f2;
+  color: #08183a;
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+  padding: 0em 0em 20em 1em;
+}
+
+.hero .card-hero {
+  background: white;
+  padding: 1em 2em 3em 1em;
+  border-radius: 0px 0px 0px 50px;
+  -webkit-box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+          box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+}
+
+.hero .card-hero .upper .content h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 77px;
+}
+
+.hero .card-hero .upper .content h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 43px;
+}
+
+.hero .card-hero .upper .content button {
+  border: none;
+  padding: 1em 2em;
+  border-radius: 8px;
+  background: #08183a;
+  color: white;
+  margin: 2em 0em;
+}
+
+.hero .card-hero .upper svg {
+  width: 100%;
+}
+
+.hero .card-hero .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -2em;
+}
+
+.hero .card-hero .lower ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .card-hero .lower ul img {
+  width: 24px;
+  height: 24px;
+}
+
+.hero .card-hero .lower ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.hero .card-hero .lower .hero-line {
+  width: 100%;
   height: 3;
 }
 
