@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 10%;
-}
-
 h2 {
   margin: 0;
   font-style: normal;
@@ -166,6 +162,8 @@ header ul a {
   padding-top: 0;
   position: relative;
   z-index: 1;
+  display: -ms-grid;
+  display: grid;
 }
 
 .experience svg {
@@ -227,8 +225,106 @@ header ul a {
   width: 100%;
 }
 
-.about-title span {
+.experience .button-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project .exp-subtitle {
+  font-size: 18px;
+  line-height: 22px;
   color: #fd5e53;
+  text-align: left;
+}
+
+.project .exp-featured-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08183a;
+  text-align: left;
+}
+
+.project .exp-featured-detail {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #08183a;
+  text-align: left;
+}
+
+.project .button-tech {
+  margin: 2em 0;
+}
+
+.project .button-tech button {
+  padding: 12px 24px;
+  background: #ffffff;
+  border: 1px solid #08183a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.button-main {
+  padding: 12px 24px;
+  color: #ffffff;
+  background: #08183a;
+  border: 1px solid #08183a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+}
+
+.about span {
+  color: #fd5e53;
+}
+
+.about h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 75px;
+  letter-spacing: 0.01em;
+  color: #08183a;
+}
+
+.about img {
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  z-index: -1;
+}
+
+.about svg {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 25%;
+}
+
+.about button {
+  margin: 2em 0;
+}
+
+.about .text-container {
+  background: #ffffff;
+  mix-blend-mode: screen;
+  -webkit-box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+          box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
 }
 
 .icon-white {
