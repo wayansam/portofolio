@@ -173,7 +173,7 @@ header ul a {
 
 .experience .background-text {
   width: inherit;
-  margin-left: -2em;
+  top: 2em;
 }
 
 .experience .vertical-sign {
@@ -294,7 +294,7 @@ header ul a {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 75px;
+  line-height: 55px;
   letter-spacing: 0.01em;
   color: #08183a;
 }
@@ -311,20 +311,98 @@ header ul a {
   width: 50%;
   height: 100%;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
   top: 0;
-  left: 25%;
+  left: 45%;
 }
 
 .about button {
   margin: 2em 0;
 }
 
-.about .text-container {
-  background: #ffffff;
-  mix-blend-mode: screen;
-  -webkit-box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
-          box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+.about .box-container {
+  display: none;
+}
+
+.contact {
+  background: #f2f2f2;
+  padding: 2em 0 0 0;
+  margin: 5em 1em 0 0;
+  border-radius: 0px 50px 0px 0px;
+  position: relative;
+}
+
+.contact h2 {
+  padding-left: 1em;
+}
+
+.contact .contact-detail {
+  width: 100%;
+  background: #08183a;
+  border-radius: 50px 0px 0px 0px;
+  margin: 1em 0 0 1em;
+  display: -ms-grid;
+  display: grid;
+  color: white;
+}
+
+.contact .contact-detail .contact-header {
+  margin: 1em 1em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-detail .contact-header h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.1em;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.contact .contact-detail .contact-header span {
+  color: #fd5e53;
+}
+
+.contact .contact-detail .contact-header img {
+  margin-top: 1em;
+  width: 35%;
+}
+
+.contact .contact-detail .contact-content {
+  margin-right: 1em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-detail .contact-content p {
+  margin: 1em 0;
+}
+
+.contact .contact-detail .contact-content hr {
+  margin: 2em 0;
+}
+
+.contact .contact-detail .contact-content .separator {
+  display: none;
+}
+
+.contact .contact-detail .contact-content .location,
+.contact .contact-detail .contact-content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .icon-white {
