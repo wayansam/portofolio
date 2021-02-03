@@ -119,8 +119,6 @@ header ul a {
   z-index: 0;
   padding-left: 50%;
   height: 100%;
-  -webkit-backdrop-filter: blur(70px);
-          backdrop-filter: blur(70px);
 }
 
 .hero .card-hero .lower {
@@ -268,6 +266,7 @@ header ul a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
+  margin: 0.25em;
 }
 
 .button-main {
@@ -388,10 +387,24 @@ header ul a {
 
 .contact .contact-detail .contact-content p {
   margin: 1em 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
 }
 
 .contact .contact-detail .contact-content hr {
   margin: 2em 0;
+}
+
+.contact .contact-detail .contact-content .contact-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-align: left;
 }
 
 .contact .contact-detail .contact-content .separator {
@@ -403,9 +416,76 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1em 1em 0 1em;
+}
+
+.contact .contact-detail .contact-content .location svg,
+.contact .contact-detail .contact-content ul li svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+
+.contact .contact-detail .contact-content .location p,
+.contact .contact-detail .contact-content ul li p {
+  margin: 0;
+}
+
+.contact .last-footer {
+  margin: 5em 0 2em 0;
 }
 
 .icon-white {
   fill: white;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    padding: 4em 4em;
+  }
+  header {
+    padding: 2em 4em 2em 2em;
+    margin-left: 2em;
+  }
+  .hero {
+    padding: 0em 0em 20em 2em;
+  }
+  .hero .card-hero {
+    padding: 1em 4em 2em 2em;
+  }
+  .hero .card-hero .upper {
+    margin: 3em 0;
+  }
+  .hero .card-hero .upper svg {
+    padding-left: 25%;
+  }
+  .hero .card-hero .lower {
+    margin: 1em -4em 1em 0em;
+  }
+  .experience .vertical-sign {
+    margin-top: 7em;
+  }
+  .experience .experience-top ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .experience .experience-top ul li {
+    padding: 3em 1em;
+  }
+  .experience .experience-top ul li .icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .experience .experience-top ul li .icon-container img {
+    width: 150px;
+  }
+  .experience .experience-bottom .project {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 /*# sourceMappingURL=main.css.map */
