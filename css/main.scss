@@ -183,7 +183,7 @@ header {
         line-height: 22px;
       }
 
-      .xp-detail {
+      .exp-detail {
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
@@ -265,9 +265,9 @@ header {
   }
 
   img {
-    width: 70%;
+    width: 50%;
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: 0;
     z-index: -1;
   }
@@ -317,9 +317,10 @@ header {
     color: white;
 
     .contact-header {
-      margin: 1em 1em 0 0;
+      margin: 4em 1em 0 0;
       display: flex;
       justify-content: center;
+      align-items: center;
 
       h1 {
         margin: 0;
@@ -329,6 +330,7 @@ header {
         line-height: 75px;
         letter-spacing: 0.1em;
         width: min-content;
+        height: min-content;
       }
       span {
         color: #fd5e53;
@@ -393,7 +395,7 @@ header {
   }
 
   .last-footer {
-    margin: 5em 0 2em 0;
+    margin: 5em 0 1.5em 0;
   }
 }
 
@@ -457,6 +459,85 @@ header {
 
     .experience-bottom .project {
       display: grid;
+      grid-template-columns: 50% auto;
+      grid-gap: 1em;
+    }
+  }
+  .project {
+    .exp-subtitle {
+      margin: 0;
+    }
+
+    .exp-featured-title {
+      margin: 0.25em 0;
+    }
+
+    .exp-featured-detail {
+      margin: 0.25em 0;
+    }
+
+    .button-tech {
+      margin: 1em 0;
+
+      button {
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    img {
+      width: 50%;
+      top: 20%;
+      right: 0%;
+    }
+    svg {
+      width: 45%;
+      left: 35%;
+    }
+    .box-container {
+      display: unset;
+      position: absolute;
+      width: 70%;
+      height: 80%;
+      top: 10%;
+      left: 0;
+      z-index: -2;
+      background: #ffffff;
+      // mix-blend-mode: screen;
+      box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+    }
+  }
+
+  .contact {
+    .contact-detail {
+      .contact-header {
+        // align-content: center;
+      }
+      .contact-content {
+        // display: grid;
+        // grid-template-columns: 45% 5% 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        hr {
+          display: none;
+        }
+        .separator {
+          display: inline;
+        }
+
+        .right,
+        .left {
+          height: min-content;
+          padding-bottom: 2em;
+        }
+      }
+    }
+    .last-footer {
+      margin: 7em 0 1.5em 0;
     }
   }
 }

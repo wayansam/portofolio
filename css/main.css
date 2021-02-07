@@ -209,7 +209,7 @@ header ul a {
   line-height: 22px;
 }
 
-.experience .experience-top ul li .xp-detail {
+.experience .experience-top ul li .exp-detail {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
@@ -299,9 +299,9 @@ header ul a {
 }
 
 .about img {
-  width: 70%;
+  width: 50%;
   position: absolute;
-  top: 40%;
+  top: 35%;
   right: 0;
   z-index: -1;
 }
@@ -346,13 +346,16 @@ header ul a {
 }
 
 .contact .contact-detail .contact-header {
-  margin: 1em 1em 0 0;
+  margin: 4em 1em 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .contact-detail .contact-header h1 {
@@ -365,6 +368,9 @@ header ul a {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .contact .contact-detail .contact-header span {
@@ -432,7 +438,7 @@ header ul a {
 }
 
 .contact .last-footer {
-  margin: 5em 0 2em 0;
+  margin: 5em 0 1.5em 0;
 }
 
 .icon-white {
@@ -486,6 +492,75 @@ header ul a {
   .experience .experience-bottom .project {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    grid-gap: 1em;
+  }
+  .project .exp-subtitle {
+    margin: 0;
+  }
+  .project .exp-featured-title {
+    margin: 0.25em 0;
+  }
+  .project .exp-featured-detail {
+    margin: 0.25em 0;
+  }
+  .project .button-tech {
+    margin: 1em 0;
+  }
+  .project .button-tech button {
+    padding: 8px 16px;
+  }
+  .about {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  .about img {
+    width: 50%;
+    top: 20%;
+    right: 0%;
+  }
+  .about svg {
+    width: 45%;
+    left: 35%;
+  }
+  .about .box-container {
+    display: unset;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    left: 0;
+    z-index: -2;
+    background: #ffffff;
+    -webkit-box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+            box-shadow: 50px 25px 50px 20px rgba(170, 170, 170, 0.3);
+  }
+  .contact .contact-detail .contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .contact .contact-detail .contact-content hr {
+    display: none;
+  }
+  .contact .contact-detail .contact-content .separator {
+    display: inline;
+  }
+  .contact .contact-detail .contact-content .right,
+  .contact .contact-detail .contact-content .left {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    padding-bottom: 2em;
+  }
+  .contact .last-footer {
+    margin: 7em 0 1.5em 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
