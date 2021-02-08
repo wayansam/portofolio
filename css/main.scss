@@ -395,7 +395,7 @@ header {
   }
 
   .last-footer {
-    margin: 5em 0 1.5em 0;
+    margin: 5em 1em 1.5em 0;
   }
 }
 
@@ -413,7 +413,7 @@ header {
   }
 
   .hero {
-    padding: 0em 0em 20em 2em;
+    padding-left: 2em;
 
     .card-hero {
       padding: 1em 4em 2em 2em;
@@ -426,7 +426,7 @@ header {
       }
 
       .lower {
-        margin: 1em -4em 1em 0em;
+        margin-right: -4em;
       }
     }
   }
@@ -537,7 +537,132 @@ header {
       }
     }
     .last-footer {
-      margin: 7em 0 1.5em 0;
+      margin: 7em 1em 1.5em 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  section {
+    padding: 4em 8em;
+  }
+  header {
+    padding-right: 8em;
+    padding-left: 4em;
+    margin-left: 4em;
+  }
+
+  .hero {
+    padding-left: 4em;
+    padding-bottom: 25em;
+
+    .card-hero {
+      padding: 2em 8em 4em 4em;
+
+      .upper {
+        margin: 6em 0;
+        svg {
+          padding-left: 35%;
+        }
+      }
+
+      .lower {
+        margin-right: -8em;
+      }
+    }
+  }
+
+  .experience {
+    margin-top: -12em;
+    .background-text {
+      top: 3em;
+    }
+    .vertical-sign {
+      margin-top: 9em;
+    }
+    .experience-top ul {
+      grid-gap: 1.5em;
+    }
+    .experience-bottom {
+      margin: 4em 1em;
+      .project {
+        grid-gap: 1.5em;
+      }
+    }
+    .button-main-container {
+      margin-bottom: 4em;
+    }
+  }
+
+  .project {
+    .exp-featured-title {
+      margin: 0.5em 0;
+    }
+
+    .exp-featured-detail {
+      margin: 0.5em 0;
+    }
+
+    .button-tech {
+      margin: 2em 0;
+
+      button {
+        padding: 12px 24px;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 12em;
+    padding-bottom: 12em;
+    img {
+      width: 60%;
+      top: 10%;
+      right: 0%;
+    }
+    svg {
+      width: 35%;
+      left: 35%;
+    }
+
+    .box-content {
+      width: 60%;
+    }
+    .box-container {
+      height: 50%;
+      top: 25%;
+      box-shadow: none;
+    }
+  }
+
+  .contact {
+    margin-top: 10em;
+    margin-right: 8em;
+
+    h2 {
+      padding-left: 4.5em;
+    }
+    .contact-detail {
+      margin-left: 8em;
+      //   margin-right: 2em;
+
+      .contact-header {
+        margin-right: 8em;
+        h1 {
+          width: auto;
+        }
+        img {
+          width: 30%;
+        }
+      }
+
+      .contact-content {
+        margin-right: 8em;
+        padding: 0 2em;
+      }
+    }
+    .last-footer {
+      margin: 9em 8em 1.5em 0;
     }
   }
 }

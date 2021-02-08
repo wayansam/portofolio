@@ -438,7 +438,7 @@ header ul a {
 }
 
 .contact .last-footer {
-  margin: 5em 0 1.5em 0;
+  margin: 5em 1em 1.5em 0;
 }
 
 .icon-white {
@@ -454,7 +454,7 @@ header ul a {
     margin-left: 2em;
   }
   .hero {
-    padding: 0em 0em 20em 2em;
+    padding-left: 2em;
   }
   .hero .card-hero {
     padding: 1em 4em 2em 2em;
@@ -466,7 +466,7 @@ header ul a {
     padding-left: 25%;
   }
   .hero .card-hero .lower {
-    margin: 1em -4em 1em 0em;
+    margin-right: -4em;
   }
   .experience .vertical-sign {
     margin-top: 7em;
@@ -560,7 +560,115 @@ header ul a {
     padding-bottom: 2em;
   }
   .contact .last-footer {
-    margin: 7em 0 1.5em 0;
+    margin: 7em 1em 1.5em 0;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  section {
+    padding: 4em 8em;
+  }
+  header {
+    padding-right: 8em;
+    padding-left: 4em;
+    margin-left: 4em;
+  }
+  .hero {
+    padding-left: 4em;
+    padding-bottom: 25em;
+  }
+  .hero .card-hero {
+    padding: 2em 8em 4em 4em;
+  }
+  .hero .card-hero .upper {
+    margin: 6em 0;
+  }
+  .hero .card-hero .upper svg {
+    padding-left: 35%;
+  }
+  .hero .card-hero .lower {
+    margin-right: -8em;
+  }
+  .experience {
+    margin-top: -12em;
+  }
+  .experience .background-text {
+    top: 3em;
+  }
+  .experience .vertical-sign {
+    margin-top: 9em;
+  }
+  .experience .experience-top ul {
+    grid-gap: 1.5em;
+  }
+  .experience .experience-bottom {
+    margin: 4em 1em;
+  }
+  .experience .experience-bottom .project {
+    grid-gap: 1.5em;
+  }
+  .experience .button-main-container {
+    margin-bottom: 4em;
+  }
+  .project .exp-featured-title {
+    margin: 0.5em 0;
+  }
+  .project .exp-featured-detail {
+    margin: 0.5em 0;
+  }
+  .project .button-tech {
+    margin: 2em 0;
+  }
+  .project .button-tech button {
+    padding: 12px 24px;
+  }
+  .about {
+    padding-top: 12em;
+    padding-bottom: 12em;
+  }
+  .about img {
+    width: 60%;
+    top: 10%;
+    right: 0%;
+  }
+  .about svg {
+    width: 35%;
+    left: 35%;
+  }
+  .about .box-content {
+    width: 60%;
+  }
+  .about .box-container {
+    height: 50%;
+    top: 25%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contact {
+    margin-top: 10em;
+    margin-right: 8em;
+  }
+  .contact h2 {
+    padding-left: 4.5em;
+  }
+  .contact .contact-detail {
+    margin-left: 8em;
+  }
+  .contact .contact-detail .contact-header {
+    margin-right: 8em;
+  }
+  .contact .contact-detail .contact-header h1 {
+    width: auto;
+  }
+  .contact .contact-detail .contact-header img {
+    width: 30%;
+  }
+  .contact .contact-detail .contact-content {
+    margin-right: 8em;
+    padding: 0 2em;
+  }
+  .contact .last-footer {
+    margin: 9em 8em 1.5em 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
