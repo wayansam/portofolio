@@ -644,7 +644,6 @@ header {
     }
     .contact-detail {
       margin-left: 8em;
-      //   margin-right: 2em;
 
       .contact-header {
         margin-right: 8em;
@@ -663,6 +662,186 @@ header {
     }
     .last-footer {
       margin: 9em 8em 1.5em 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  section {
+    padding: 4em 12em;
+  }
+  header {
+    padding-right: 12em;
+    padding-left: 6em;
+    margin-left: 6em;
+  }
+  .hero {
+    padding-left: 6em;
+
+    .card-hero {
+      padding: 4em 12em 6em 6em;
+
+      .upper {
+        margin: 4em 0;
+        .content {
+          margin: 2em 0;
+          .meet {
+            margin: 1em 0;
+          }
+        }
+        svg {
+          padding-left: 35%;
+        }
+      }
+
+      .lower {
+        margin-top: 6em;
+        margin-right: -12em;
+      }
+    }
+  }
+
+  .experience {
+    .experience-top ul {
+      grid-gap: 2em;
+    }
+
+    .experience-bottom .project {
+      grid-gap: 2em;
+    }
+    .button-main-container {
+      margin-bottom: 6em;
+    }
+  }
+
+  .project {
+    .exp-featured-title {
+      margin: 0.75em 0;
+    }
+
+    .exp-featured-detail {
+      margin: 0.75em 0;
+    }
+
+    .button-tech {
+      margin: 3em 0;
+    }
+  }
+
+  .about {
+    padding-top: 14em;
+    padding-bottom: 14em;
+    img {
+      width: 60%;
+      top: 5%;
+      right: 0%;
+    }
+    svg {
+      width: 30%;
+    }
+  }
+
+  .contact {
+    margin-right: 12em;
+
+    h2 {
+      padding-left: 6.75em;
+    }
+    .contact-detail {
+      margin-left: 12em;
+
+      .contact-header {
+        margin-right: 12em;
+
+        img {
+          width: 35%;
+        }
+      }
+
+      .contact-content {
+        margin-right: 12em;
+      }
+    }
+    .last-footer {
+      margin: 9em 12em 1.5em 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  section {
+    padding: 10em 20em;
+  }
+  header {
+    padding-right: 20em;
+    padding-left: 10em;
+    margin-left: 10em;
+  }
+  .hero {
+    padding-left: 10em;
+
+    .card-hero {
+      padding: 4em 20em 6em 10em;
+
+      .upper svg {
+        padding-left: 30%;
+      }
+
+      .lower {
+        margin-right: -20em;
+      }
+    }
+  }
+
+  .experience {
+    .experience-top ul {
+      grid-gap: 3em;
+      li {
+        padding: 3em 2em;
+      }
+    }
+
+    .experience-bottom .project {
+      grid-gap: 3em;
+    }
+  }
+
+  .about {
+    padding-top: 16em;
+    padding-bottom: 16em;
+    img {
+      width: 60%;
+      top: 0%;
+      right: 0%;
+    }
+    svg {
+      width: 30%;
+    }
+  }
+
+  .contact {
+    margin-right: 20em;
+
+    h2 {
+      padding-left: 11.25em;
+    }
+    .contact-detail {
+      margin-left: 20em;
+
+      .contact-header {
+        margin-right: 20em;
+
+        img {
+          width: 35%;
+        }
+      }
+
+      .contact-content {
+        margin-right: 20em;
+      }
+    }
+    .last-footer {
+      margin: 9em 20em 1.5em 0;
     }
   }
 }
