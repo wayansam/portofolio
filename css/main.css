@@ -445,6 +445,47 @@ header ul a {
   fill: white;
 }
 
+.overlay-experience,
+.overlay-about {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  padding: unset;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.ov-container {
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+}
+
+.ov-container img {
+  width: 100%;
+}
+
+.ov-container .ov-background-text {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  z-index: 11;
+}
+
+.ov-container .overlay-content {
+  margin: 5em 1em 2em 1em;
+  z-index: 12;
+}
+
+.ov-container .overlay-content .project {
+  margin-bottom: 4em;
+}
+
 @media only screen and (min-width: 800px) {
   section {
     padding: 4em 4em;
@@ -564,6 +605,13 @@ header ul a {
   }
   .contact .last-footer {
     margin: 3em 1em 1.5em 0;
+  }
+  .ov-container .project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    grid-gap: 1em;
   }
 }
 
