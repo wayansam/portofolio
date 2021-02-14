@@ -90,7 +90,7 @@ header {
         }
 
         button {
-          border: none;
+          border: 1px solid #08183a;
           padding: 1em 2em;
           border-radius: 8px;
           background: #08183a;
@@ -426,10 +426,20 @@ header {
   img {
     width: 100%;
   }
+
+  .close-btn {
+    // display: none;
+    position: fixed;
+    z-index: 15;
+    top: 15%;
+    left: 5%;
+    width: min-content;
+  }
+
   .ov-background-text {
     position: absolute;
     left: 15%;
-    top: 10%;
+    top: 4em;
     z-index: 11;
   }
 
@@ -583,10 +593,16 @@ header {
   }
 
   .ov-container {
-    .project {
-      display: grid;
-      grid-template-columns: 50% auto;
-      grid-gap: 1em;
+    padding: 2em 4em;
+    .ov-background-text {
+      top: 4em;
+    }
+    .overlay-content {
+      .project {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-gap: 1em;
+      }
     }
   }
 }
@@ -713,6 +729,18 @@ header {
       margin: 5em 8em 1.5em 0;
     }
   }
+
+  .ov-container {
+    padding: 4em 8em;
+    .ov-background-text {
+      top: 6em;
+    }
+    .overlay-content {
+      .project {
+        grid-gap: 1.5em;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -815,6 +843,18 @@ header {
       margin: 5em 12em 1.5em 0;
     }
   }
+
+  .ov-container {
+    padding: 4em 12em;
+    .ov-background-text {
+      top: 6em;
+    }
+    .overlay-content {
+      .project {
+        grid-gap: 2em;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -899,6 +939,18 @@ header {
     }
     .last-footer {
       margin: 9em 20em 1.5em 0;
+    }
+  }
+
+  .ov-container {
+    padding: 6em 20em;
+    .ov-background-text {
+      top: 8em;
+    }
+    .overlay-content {
+      .project {
+        grid-gap: 3em;
+      }
     }
   }
 }
