@@ -456,8 +456,8 @@ header ul a {
   padding: unset;
   background-color: white;
   overflow-x: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 .ov-container {
@@ -474,10 +474,10 @@ header ul a {
   position: fixed;
   z-index: 15;
   top: 15%;
-  left: 5%;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  left: 100%;
+  width: 0%;
+  -webkit-transition: left 1.5s;
+  transition: left 1.5s;
 }
 
 .ov-container .ov-background-text {

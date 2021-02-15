@@ -58,9 +58,7 @@ header {
     }
   }
 }
-.div-shadow {
-  //   position: relative;
-}
+
 .hero {
   background: #f2f2f2;
   color: #08183a;
@@ -417,7 +415,7 @@ header {
   background-color: rgb(255, 255, 255);
   //   background-color: rgba(255, 255, 255, 0.9);
   overflow-x: hidden;
-  transition: 1s;
+  transition: width 1s;
 }
 
 .ov-container {
@@ -428,12 +426,12 @@ header {
   }
 
   .close-btn {
-    // display: none;
     position: fixed;
     z-index: 15;
     top: 15%;
-    left: 5%;
-    width: min-content;
+    left: 100%;
+    width: 0%;
+    transition: left 1.5s;
   }
 
   .ov-background-text {
@@ -564,9 +562,7 @@ header {
   .contact {
     .contact-detail {
       margin: 1em 0 0 1em;
-      .contact-header {
-        // align-content: center;
-      }
+
       .contact-content {
         // display: grid;
         // grid-template-columns: 45% 5% 40%;
