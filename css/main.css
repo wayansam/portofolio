@@ -496,6 +496,126 @@ header ul a {
   margin-bottom: 4em;
 }
 
+.overlay-about .overlay-content h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 77px;
+}
+
+.overlay-about .overlay-content h1 span {
+  color: #fd5e53;
+}
+
+.overlay-about .overlay-content h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+}
+
+.overlay-about .overlay-content h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.overlay-about .overlay-content h4 {
+  margin: 0.5em 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.overlay-about .overlay-content h5 {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fd5e53;
+}
+
+.overlay-about .overlay-content .part {
+  margin: 4em 0;
+}
+
+.overlay-about .overlay-content .part p {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 200%;
+}
+
+.overlay-about .overlay-content .edu {
+  width: 100%;
+}
+
+.overlay-about .overlay-content .edu .container {
+  background-color: #08183a;
+  color: white;
+  margin: 4em -3em 4em -1.5em;
+  padding: 6em 3em 6em 1.5em;
+  border-radius: 0px 0px 0px 50px;
+}
+
+.overlay-about .overlay-content .organization .content {
+  background: #ffffff;
+  -webkit-box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+          box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+  border-radius: 25px;
+  padding: 2em 2em;
+  margin: 2em 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.overlay-about .overlay-content .organization .content .detail .point {
+  background: #ffffff;
+  -webkit-box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+          box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+  border-radius: 25px;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.overlay-about .overlay-content .committee .content {
+  background: #ffffff;
+  -webkit-box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+          box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+  border-radius: 25px;
+  padding: 2em 2em;
+  margin: 2em 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.overlay-about .overlay-content .committee .content .event-row {
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.overlay-about .overlay-content .committee .content .event-row ul li {
+  margin: 0.5em 0;
+}
+
+.overlay-about .overlay-content .committee .content .event-row ul li::before {
+  color: #fd5e53;
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.overlay-about .overlay-content .bullet-img img {
+  width: 10%;
+}
+
 @media only screen and (min-width: 800px) {
   section {
     padding: 4em 4em;

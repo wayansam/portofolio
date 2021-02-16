@@ -451,6 +451,119 @@ header {
   }
 }
 
+.overlay-about .overlay-content {
+  h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 77px;
+    span {
+      color: #fd5e53;
+    }
+  }
+  h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  h4 {
+    margin: 0.5em 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  h5 {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fd5e53;
+  }
+  .part {
+    margin: 4em 0;
+    p {
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 200%;
+    }
+  }
+  .edu {
+    width: 100%;
+    .container {
+      background-color: #08183a;
+      color: white;
+      margin: 4em -3em 4em -1.5em;
+      padding: 6em 3em 6em 1.5em;
+      border-radius: 0px 0px 0px 50px;
+    }
+  }
+  .organization {
+    .content {
+      background: #ffffff;
+      box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+      border-radius: 25px;
+      padding: 2em 2em;
+      margin: 2em 0;
+      display: grid;
+
+      .detail {
+        .point {
+          background: #ffffff;
+          box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+          border-radius: 25px;
+          padding: 1em;
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+  .committee {
+    .content {
+      background: #ffffff;
+      box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+      border-radius: 25px;
+      padding: 2em 2em;
+      margin: 2em 0;
+      display: grid;
+      .event-row {
+        padding: 1em;
+        margin-top: 2em;
+        ul {
+          //   list-style-type: disc;
+          li {
+            margin: 0.5em 0;
+          }
+          li::before {
+            color: #fd5e53;
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+          }
+        }
+      }
+    }
+  }
+  .bullet-img {
+    img {
+      width: 10%;
+    }
+  }
+}
+
 @media only screen and (min-width: 800px) {
   section {
     padding: 4em 4em;
