@@ -4,7 +4,14 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Lato", sans-serif;
-  //   background-color: #b4b4b4;
+  //   color: #08183a;
+  color: rgba(8, 24, 58, 0.8);
+}
+h1 {
+  color: #08183a;
+}
+span {
+  color: #fd5e53;
 }
 
 ul {
@@ -14,6 +21,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: #08183a;
 }
 h2 {
   margin: 0;
@@ -30,12 +38,13 @@ section {
   }
 }
 
+.secondary-color {
+  color: rgba(255, 255, 255, 0.95);
+}
+
 .nav-container {
   background: #f2f2f2;
   position: relative;
-  a {
-    color: #08183a;
-  }
 }
 
 header {
@@ -61,7 +70,6 @@ header {
 
 .hero {
   background: #f2f2f2;
-  color: #08183a;
   display: grid;
   text-align: left;
   padding: 0em 0em 20em 1em;
@@ -92,7 +100,6 @@ header {
           padding: 1em 2em;
           border-radius: 8px;
           background: #08183a;
-          color: white;
           margin: 2em 0em;
         }
       }
@@ -136,7 +143,6 @@ header {
 }
 
 .experience {
-  //   background-color: green;
   margin-top: -10em;
   padding-top: 0;
   position: relative;
@@ -213,14 +219,12 @@ header {
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-    color: #08183a;
     text-align: left;
   }
   .exp-featured-detail {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    color: #08183a;
     text-align: left;
   }
   .button-tech {
@@ -233,13 +237,13 @@ header {
       box-sizing: border-box;
       border-radius: 8px;
       margin: 0.25em;
+      color: #08183a;
     }
   }
 }
 
 .button-main {
   padding: 12px 24px;
-  color: #ffffff;
   background: #08183a;
   border: 1px solid #08183a;
   box-sizing: border-box;
@@ -259,7 +263,7 @@ header {
     font-size: 40px;
     line-height: 55px;
     letter-spacing: 0.01em;
-    color: #08183a;
+    // color: #08183a;
   }
 
   img {
@@ -312,7 +316,6 @@ header {
     border-radius: 50px 0px 0px 0px;
     margin: 0 0 0 1em;
     display: grid;
-    color: white;
 
     .contact-header {
       margin: 1em 1em 0 0;
@@ -330,9 +333,7 @@ header {
         width: min-content;
         height: min-content;
       }
-      span {
-        color: #fd5e53;
-      }
+
       img {
         margin-top: 1em;
         width: 35%;
@@ -442,7 +443,7 @@ header {
   }
 
   .overlay-content {
-    margin: 5em 1em 2em 1em;
+    margin: 5em 1em 0em 1em;
     z-index: 12;
 
     .project {
@@ -478,7 +479,7 @@ header {
   h4 {
     margin: 0.5em 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     line-height: 25px;
   }
@@ -562,6 +563,91 @@ header {
       width: 10%;
     }
   }
+  .passion {
+    ul li {
+      .icon-container {
+        margin: 2em 0;
+        display: grid;
+        place-content: center;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+  .skillset {
+    .skill {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      justify-content: start;
+      align-items: center;
+      margin: 0.5em 0;
+      .skill-icon {
+      }
+      .skill-detail {
+        margin-left: 0.5em;
+        p {
+          margin: 0;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        .bar-container {
+          width: 100%;
+          height: 25px;
+          background: rgba(253, 94, 83, 0.1);
+          border-radius: 0px 50px 0px 0px;
+          display: grid;
+          align-items: end;
+          margin-top: 0.5em;
+          .bar-filler {
+            background: linear-gradient(270deg, #fd5e53 34.37%, #08183a 100%);
+            border-radius: 0px 50px 0px 0px;
+            height: 18px;
+            p {
+              color: white;
+              font-size: 14px;
+              line-height: 18px;
+              margin-left: 1em;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-footer {
+    .footer-img {
+      background: linear-gradient(
+          0deg,
+          rgba(8, 24, 58, 0.5),
+          rgba(8, 24, 58, 0.5)
+        ),
+        url("../images/about-footer.JPG");
+      box-shadow: 40px 25px 50px 10px rgba(170, 170, 170, 0.2);
+      border-radius: 0px 25px 0px 0px;
+      height: 210px;
+      width: 100%;
+      background-position: 0 75%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: -3em;
+      padding-right: 3em;
+      margin-top: -250px;
+      z-index: 14;
+    }
+    .footer-box {
+      height: 210px;
+      background: #08183a;
+      border-radius: 0px 0px 0px 25px;
+      margin-right: -3em;
+      padding-left: 3em;
+      margin-top: 150px;
+      z-index: 13;
+    }
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -601,7 +687,7 @@ header {
       ul {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-gap: 1em;
+        gap: 1em;
 
         li {
           padding: 3em 1em;
@@ -621,7 +707,7 @@ header {
     .experience-bottom .project {
       display: grid;
       grid-template-columns: 50% auto;
-      grid-gap: 1em;
+      gap: 1em;
     }
   }
   .project {
@@ -710,7 +796,76 @@ header {
       .project {
         display: grid;
         grid-template-columns: 50% auto;
-        grid-gap: 1em;
+        gap: 1em;
+      }
+    }
+  }
+
+  .overlay-about .overlay-content {
+    .intro {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-top: 0;
+      margin-bottom: 2em;
+      .intro-img {
+        margin-bottom: -8em;
+        margin-right: 1em;
+        align-self: end;
+      }
+    }
+    .edu {
+      margin-top: 2em;
+      .container {
+        margin: 0em -5em 4em 4em;
+        padding: 10em 11em 4em 2em;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .organization .content {
+      display: grid;
+      grid-template-columns: 10% 90%;
+    }
+    .committee .content .event-row {
+      display: grid;
+      grid-template-columns: 10% 90%;
+      .detail {
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .bullet-img {
+      img {
+        margin-top: 2em;
+        width: 75%;
+      }
+    }
+    .passion ul {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      li {
+        padding: 0 1em;
+        p {
+          text-align: justify;
+        }
+      }
+    }
+    .skillset ul .skill {
+      display: grid;
+      grid-template-columns: 10% 60%;
+      justify-content: center;
+      gap: 2em;
+    }
+    .about-footer {
+      .footer-img {
+        margin-left: -5em;
+        padding-right: 5em;
+      }
+      .footer-box {
+        margin-right: -5em;
+        padding-left: 5em;
       }
     }
   }
@@ -755,12 +910,12 @@ header {
       margin-top: 9em;
     }
     .experience-top ul {
-      grid-gap: 1.5em;
+      gap: 1.5em;
     }
     .experience-bottom {
       margin: 4em 1em;
       .project {
-        grid-gap: 1.5em;
+        gap: 1.5em;
       }
     }
     .button-main-container {
@@ -846,7 +1001,41 @@ header {
     }
     .overlay-content {
       .project {
-        grid-gap: 1.5em;
+        gap: 1.5em;
+      }
+    }
+  }
+
+  .overlay-about .overlay-content {
+    .intro .intro-img {
+      margin-bottom: -10em;
+      margin-right: 2em;
+    }
+    .edu .container {
+      margin: 0em -9em 4em 4em;
+      padding: 12em 17em 4em 4em;
+    }
+    .skillset ul {
+      margin: 0 -2em;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1em;
+      .skill {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        // justify-content: center;
+        gap: 0;
+        margin: 3em 0;
+      }
+    }
+    .about-footer {
+      .footer-img {
+        margin-left: -9em;
+        padding-right: 9em;
+      }
+      .footer-box {
+        margin-right: -9em;
+        padding-left: 9em;
       }
     }
   }
@@ -889,11 +1078,11 @@ header {
 
   .experience {
     .experience-top ul {
-      grid-gap: 2em;
+      gap: 2em;
     }
 
     .experience-bottom .project {
-      grid-gap: 2em;
+      gap: 2em;
     }
     .button-main-container {
       margin-bottom: 6em;
@@ -960,7 +1149,40 @@ header {
     }
     .overlay-content {
       .project {
-        grid-gap: 2em;
+        gap: 2em;
+      }
+    }
+  }
+
+  .overlay-about .overlay-content {
+    .intro {
+      .intro-img {
+        margin-bottom: -12em;
+        margin-right: 4em;
+      }
+      .intro-desc p {
+        margin: 2em 1em;
+      }
+    }
+    .edu .container {
+      margin: 0em -13em 4em 4em;
+      padding: 14em 23em 4em 6em;
+    }
+    .passion ul {
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 -6em;
+    }
+    .skillset ul {
+      margin: 0 -6em;
+    }
+    .about-footer {
+      .footer-img {
+        margin-left: -13em;
+        padding-right: 13em;
+      }
+      .footer-box {
+        margin-right: -13em;
+        padding-left: 13em;
       }
     }
   }
@@ -1001,14 +1223,14 @@ header {
 
   .experience {
     .experience-top ul {
-      grid-gap: 3em;
+      gap: 3em;
       li {
         padding: 3em 2em;
       }
     }
 
     .experience-bottom .project {
-      grid-gap: 3em;
+      gap: 3em;
     }
   }
 
@@ -1058,7 +1280,36 @@ header {
     }
     .overlay-content {
       .project {
-        grid-gap: 3em;
+        gap: 3em;
+      }
+    }
+  }
+
+  .overlay-about .overlay-content {
+    .intro {
+      .intro-img {
+        margin-right: 6em;
+      }
+      .intro-desc p {
+        margin: 2em 2em;
+      }
+    }
+    .edu .container {
+      margin: 0em -21em 4em 4em;
+      padding: 14em 33em 4em 8em;
+    }
+    .passion ul,
+    .skillset ul {
+      margin: 0 -8em;
+    }
+    .about-footer {
+      .footer-img {
+        margin-left: -21em;
+        padding-right: 21em;
+      }
+      .footer-box {
+        margin-right: -21em;
+        padding-left: 21em;
       }
     }
   }
