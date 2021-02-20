@@ -183,7 +183,7 @@
       <div class="experience-bottom">
         <div class="project">
           <img
-            src="images/exp-project-img-placeholder.svg"
+            src="images/tinkerer.jpg"
             alt="Tinkerer"
             class="left transitionExp"
           />
@@ -373,7 +373,7 @@
             fill="#08183A"
           />
         </svg>
-        <div class="overlay-content">
+        <div class="overlay-content" id="content-exp">
           <div class="project transitionOvExp">
             <img
               src="images/exp-project-img-placeholder.svg"
@@ -454,18 +454,18 @@
             fill="#08183A"
           />
         </svg>
-        <div class="overlay-content">
-          <h1 class="about-title">
+        <div class="overlay-content" id="content-about">
+          <h1 class="about-title transitionOvAbout">
             I
             <span>Wayan</span>
           </h1>
-          <h1><u> Surya Adi Merta</u></h1>
+          <h1 class="about-title transitionOvAbout"><u> Surya Adi Merta</u></h1>
 
           <div class="intro part">
-            <div class="intro-img">
+            <div class="intro-img transitionOvAbout">
               <img src="images/photo-box.png" alt="profile" />
             </div>
-            <div class="intro-desc">
+            <div class="intro-desc transitionOvAbout">
               <p>
                 Was born in Kuta, Bali in 1997, I'm a 23 year old web developer
                 and UI designer living in Jakarta. I'm majoring in Information
@@ -843,6 +843,9 @@
       var overlayProject = document.getElementById("overlay-experience");
       var overlayAbout = document.getElementById("overlay-about");
 
+      var overlayProjectContent = document.getElementById("content-exp");
+      var overlayAboutContent = document.getElementById("content-about");
+
       var overlayProjectClose = document.getElementById("close-btn-project");
       var overlayAboutClose = document.getElementById("close-btn-about");
 
@@ -864,6 +867,8 @@
         mainBody.style.overflow = "hidden";
         if (overlay === "Project") {
           overlayProject.style.width = "100%";
+          overlayProjectContent.style.opacity = 1;
+          overlayProjectClose.style.transition = "1.5s";
           overlayProjectClose.style.width = "min-content";
           overlayProjectClose.style.left = "5%";
           gsap.from(".transitionOvExp", {
@@ -876,43 +881,58 @@
           });
         } else if (overlay === "About") {
           overlayAbout.style.width = "100%";
+          overlayAboutContent.style.opacity = 1;
+          overlayAboutClose.style.transition = "1.5s";
           overlayAboutClose.style.width = "min-content";
           overlayAboutClose.style.left = "5%";
+          gsap.from(".transitionOvAbout", {
+            x: "50%",
+            opacity: 0,
+            duration: 2,
+            stagger: 0.4,
+            ease: Power4.easeOut,
+            delay: 0.5,
+          });
         }
       }
       async function closeOverlay(overlay) {
         if (overlay === "Project") {
-          await hideProject();
-          overlayProject.style.width = "0%";
-          overlayProjectClose.style.width = "0%";
+          gsap.to(overlayProject, {
+            duration: 0.5,
+            scrollTo: { y: overlayProject.offsetTop },
+          });
+          overlayProjectClose.style.transition = "0.5s";
           overlayProjectClose.style.left = "100%";
+          overlayProjectContent.style.opacity = 0;
+          await delayThings(0.5);
+          overlayProjectClose.style.width = "0%";
+          overlayProject.style.width = "0%";
         } else if (overlay === "About") {
-          overlayAbout.style.width = "0%";
-          overlayAboutClose.style.width = "0%";
+          gsap.to(overlayAbout, {
+            duration: 0.5,
+            scrollTo: { y: overlayAbout.offsetTop },
+          });
+          overlayAboutClose.style.transition = "0.5s";
           overlayAboutClose.style.left = "100%";
+          overlayAboutContent.style.opacity = 0;
+          await delayThings(0.5);
+          overlayAboutClose.style.width = "0%";
+          overlayAbout.style.width = "0%";
         }
         mainBody.style.overflow = "unset";
       }
 
-      function hideProject() {
+      function delayThings(time) {
         return new Promise((resolve) => {
           setTimeout(() => {
-            // gsap.to(".transitionOvExp", {
-            //   //   x: "50%",
-            //   opacity: 0,
-            //   duration: 2,
-            //   //   stagger: 0.4,
-            //   //   ease: Power4.easeOut,
-            //   // delay: 0.5,
-            // });
             resolve();
-          }, 2000);
+          }, time * 1000);
         });
       }
 
       //   window.addEventListener("load", openOverlay("About"));
 
-      // smooth scroll
+      // animation & smooth scroll
       gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
       var tl = gsap.timeline();
 

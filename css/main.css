@@ -476,8 +476,6 @@ header ul a {
   top: 15%;
   left: 100%;
   width: 0%;
-  -webkit-transition: left 1.5s;
-  transition: left 1.5s;
 }
 
 .ov-container .ov-background-text {
@@ -490,6 +488,9 @@ header ul a {
 .ov-container .overlay-content {
   margin: 5em 1em 0em 1em;
   z-index: 12;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .ov-container .overlay-content .project {

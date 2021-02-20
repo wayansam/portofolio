@@ -432,7 +432,7 @@ header {
     top: 15%;
     left: 100%;
     width: 0%;
-    transition: left 1.5s;
+    // transition: 1.5s;
   }
 
   .ov-background-text {
@@ -445,7 +445,8 @@ header {
   .overlay-content {
     margin: 5em 1em 0em 1em;
     z-index: 12;
-
+    opacity: 0;
+    transition: 0.5s;
     .project {
       margin-bottom: 4em;
     }
