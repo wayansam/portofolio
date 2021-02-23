@@ -6,6 +6,7 @@ body {
   font-family: "Lato", sans-serif;
   //   color: #08183a;
   color: rgba(8, 24, 58, 0.8);
+  overflow: hidden;
 }
 h1 {
   color: #08183a;
@@ -36,6 +37,39 @@ section {
   p {
     text-align: center;
   }
+}
+
+button:hover {
+  cursor: pointer;
+}
+// scroll-bar
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f2f2f2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba($color: #08183a, $alpha: 0.5);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #08183a;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  background-color: white;
+  z-index: 99;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondary-color {
@@ -242,6 +276,9 @@ header {
       margin: 0.25em;
       color: #08183a;
     }
+    button:hover {
+      cursor: default;
+    }
   }
 }
 
@@ -442,6 +479,9 @@ header {
   visibility: visible;
   opacity: 1;
 }
+.tooltip:hover {
+  cursor: pointer;
+}
 
 // ================ overlay item
 
@@ -474,6 +514,9 @@ header {
     left: 100%;
     width: 0%;
     // transition: 1.5s;
+  }
+  .close-btn:hover {
+    cursor: pointer;
   }
 
   .ov-background-text {

@@ -921,13 +921,15 @@
 
           <div class="about-footer part">
             <div class="footer-box"></div>
-            <div class="footer-img">
-              <!-- <img src="images/about-footer.JPG" alt="footer" /> -->
-            </div>
+            <div class="footer-img"></div>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="loading" id="loading">
+      <img src="images/loading.svg" alt="loading" />
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
@@ -938,7 +940,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/ScrollToPlugin.min.js"></script>
 
     <script>
-      //cv
+      // cv
       function openCV() {
         window.open(
           "https://drive.google.com/file/d/1sLzCZEoRdd7MjJfT5OA2kw6TFc3_NVQp/view?usp=sharing",
@@ -946,8 +948,7 @@
         );
       }
 
-      //copy clipboard
-
+      // copy clipboard
       function copyDivToClipboard(eleID) {
         var range = document.createRange();
         range.selectNode(document.getElementById(eleID));
@@ -1062,7 +1063,12 @@
         });
       }
 
-      //   window.addEventListener("load", openOverlay("About"));
+      // loading
+      window.onload = hideLoading();
+      function hideLoading() {
+        document.getElementById("loading").style.display = "none";
+        mainBody.style.overflow = "unset";
+      }
 
       // animation & smooth scroll
       gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
